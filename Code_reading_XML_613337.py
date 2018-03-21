@@ -1,4 +1,4 @@
-#author Prince Atul (613337)
+#author Prince Atul
 # importing required packages
 import os
 import re
@@ -6,8 +6,8 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # defining working directory and data path
-os.chdir(r'C:\Users\310271793\Desktop\Cognizant Data science course\Codes')
-data_path = r"C:\Users\310271793\Desktop\Cognizant Data science course\reading xml file\LiCodeChallenge_data"
+os.chdir(r'Your Working Directory')
+data_path = r"Your data file path"
 
 # defining regular expression patterns for finding values
 state_pattern = re.compile(r'<state>(.+)</state>')
@@ -66,7 +66,7 @@ data_table = pd.DataFrame(
 
 data_table.head()
 
-# Quiz question answer
+# Some question and code to find answer
 
 #How many different types of commodity can be found?
 len(data_table['Commodity'].value_counts())
